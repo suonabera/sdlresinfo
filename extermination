@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+#
+# Non standard script shortcut to get rid of all autotools generated files 
+# Used when applying important patches for example
+# MAKE SURE make uninstall distclean HAS BEEN RUN FIRST
+#
+rm -rfv autom4te.cache/
+rm -fv aclocal.m4
+rm -fv compile
+rm -fv config.guess
+rm -fv config.h.in
+rm -fv config.sub
+rm -fv configure
+rm -fv depcomp
+rm -fv missing
+rm -fv install-sh
+for i in $(find | grep \.deps); do rm -rfv $i; done
+for i in $(find | grep Makefile.in); do rm -fv $i; done

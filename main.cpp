@@ -14,6 +14,7 @@ int main(int argc, char* argv[]) {
 	sprintf(output, "current_w: %i, current_h: %i", vidinfo->current_w, vidinfo->current_h);
 	printf(output);
 #ifdef _WIN32
-	MessageBoxA(0, output, "sdlresinfo", 0x0000040L);
+	MessageBoxA(0, output, "SDL Video Info tool", 0x0000040L);
 #endif
+	return 0;
 }
