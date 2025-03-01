@@ -42,7 +42,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="&quot;SDL\include&quot;"
-				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE"
+				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -61,7 +61,6 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="sdlmain.lib sdl.lib"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="SDL\VisualC\SDLmain\Release;SDL\VisualC\SDLmain\Debug;SDL\VisualC\SDL\Release;SDL\VisualC\SDL\Debug;SDL\VisualC\SDLmain\Win32\Release;SDL\VisualC\SDLmain\Win32\Debug;SDL\VisualC\SDL\Win32\Release;SDL\VisualC\SDL\Win32\Debug;SDL\lib\x86;"
 				GenerateDebugInformation="true"
@@ -118,7 +117,7 @@
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
 				AdditionalIncludeDirectories="&quot;SDL\include&quot;"
-				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE"
+				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
@@ -136,7 +135,6 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="sdlmain.lib sdl.lib"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="SDL\VisualC\SDLmain\Release;SDL\VisualC\SDLmain\Debug;SDL\VisualC\SDL\Release;SDL\VisualC\SDL\Debug;SDL\VisualC\SDLmain\Win32\Release;SDL\VisualC\SDLmain\Win32\Debug;SDL\VisualC\SDL\Win32\Release;SDL\VisualC\SDL\Win32\Debug;SDL\lib\x86;"
 				GenerateDebugInformation="true"

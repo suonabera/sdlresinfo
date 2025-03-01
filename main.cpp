@@ -2,6 +2,8 @@
 #include "SDL.h"
 #ifdef _WIN32
 #include <windows.h>
+#pragma comment(lib, "sdlmain.lib")
+#pragma comment(lib, "sdl.lib")
 #endif
 #define SDL_main main
 
@@ -16,5 +18,6 @@ int main(int argc, char* argv[]) {
 #ifdef _WIN32
 	MessageBoxA(0, output, "SDL Video Info tool", 0x0000040L);
 #endif
+	SDL_Quit();
 	return 0;
 }
